@@ -6,11 +6,19 @@ import time
 st.set_page_config(page_title="KIT 글로벌 동향 시스템", layout="wide")
 st.title("🏛️ KIT 기획처 글로벌 동향 '더블 트랙' 시스템")
 
-colleges = ["샌하신토", "센테니얼", "발렌시아", "파사데나", "싱클레어", "피트 CC", "조지 브라운", "서남 위스콘신", "마이애미 데이드", "TAFE NSW", "CSN", "시애틀 C."]
 eng_names = {
-    "샌하신토": "San Jacinto College", "센테니얼": "Centennial College", 
-    "발렌시아": "Valencia College", "파사데나": "Pasadena City College"
-} # 필요한 대학의 영문명을 계속 추가하세요.
+    "샌하신토": "San Jacinto College",
+    "센테니얼": "Centennial College",
+    "발렌시아": "Valencia College",
+    "파사데나": "Pasadena City College",
+    "싱클레어": "Sinclair Community College",
+    "피트 CC": "Pitt Community College",
+    "조지 브라운": "George Brown College",
+    "서남 위스콘신": "Southwest Wisconsin Technical College",
+    "마이애미 데이드": "Miami Dade College",
+    "CSN": "College of Southern Nevada",
+    "시애틀 C.": "Seattle Colleges"
+}
 
 selected = st.selectbox("🔎 조사할 대학을 선택하세요", colleges)
 eng_name = eng_names.get(selected, selected)
