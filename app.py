@@ -19,6 +19,7 @@ eng_names = {
     "CSN": "College of Southern Nevada",
     "시애틀 C.": "Seattle Colleges"
 }
+colleges = list(eng_names.keys())
 
 selected = st.selectbox("🔎 조사할 대학을 선택하세요", colleges)
 eng_name = eng_names.get(selected, selected)
